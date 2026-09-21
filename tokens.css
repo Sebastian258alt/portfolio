@@ -1,0 +1,68 @@
+/* ===================================================================
+   DESIGN TOKENS
+   Light theme = "paper & ink" editorial base. Dark theme flips ground,
+   keeps the same accent family so certificates/badges read consistently.
+   =================================================================== */
+:root {
+  /* Light (default) */
+  --bg: #F7F6F2;
+  --bg-raised: #FFFFFF;
+  --bg-sunken: #EFEDE4;
+  --ink: #14181A;
+  --ink-soft: #4B5350;
+  --ink-faint: #7B8380;
+  --line: #E2DFD3;
+  --accent: #0F6E5C;
+  --accent-ink: #FFFFFF;
+  --accent-soft: #E4F0EC;
+  --gold: #B98B32;
+  --gold-soft: #F3E9D4;
+  --danger: #B4432F;
+
+  --shadow-1: 0 1px 2px rgba(20, 24, 26, 0.06);
+  --shadow-2: 0 10px 30px -12px rgba(20, 24, 26, 0.18);
+  --shadow-3: 0 24px 60px -20px rgba(20, 24, 26, 0.28);
+
+  --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --font-body: "Inter", "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --radius-s: 6px;
+  --radius-m: 12px;
+  --radius-l: 20px;
+
+  --container: 1180px;
+  --gutter: clamp(20px, 5vw, 64px);
+
+  --dur-1: 160ms;
+  --dur-2: 320ms;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+[data-theme="dark"] {
+  --bg: #0E1210;
+  --bg-raised: #161C19;
+  --bg-sunken: #0A0D0B;
+  --ink: #EDEDE8;
+  --ink-soft: #B7BDB8;
+  --ink-faint: #7E8883;
+  --line: #26302B;
+  --accent: #2FB897;
+  --accent-ink: #06120E;
+  --accent-soft: #10261F;
+  --gold: #D9A94B;
+  --gold-soft: #241D0E;
+  --danger: #E07A63;
+
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-2: 0 10px 30px -12px rgba(0, 0, 0, 0.55);
+  --shadow-3: 0 24px 60px -20px rgba(0, 0, 0, 0.65);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

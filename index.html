@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sebastião Nhamuneque</title>
+<meta name="description" content="Portefólio profissional de Sebastião Zefanias Nhamuneque Junior." />
+<meta property="og:type" content="website" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230F6E5C'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='52' font-weight='600' fill='%23FFFFFF' text-anchor='middle'%3ESN%3C/text%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="tokens.css" />
+<link rel="stylesheet" href="base.css" />
+<link rel="stylesheet" href="components.css" />
+</head>
+<body>
+<a class="skip-link" href="#main" data-i18n="nav.skip">Saltar para o conteúdo</a>
+
+<div class="scroll-progress" id="scroll-progress"></div>
+
+<header class="navbar">
+  <div class="wrap">
+    <a class="brand" href="#home">
+      Sebastião Nhamuneque <small>· Tradutor &amp; Professor</small>
+    </a>
+
+    <nav class="nav-links" aria-label="Navegação principal">
+      <a href="#home" data-i18n="nav.home">Início</a>
+      <a href="#about" data-i18n="nav.about">Sobre</a>
+      <a href="#experience" data-i18n="nav.experience">Experiência</a>
+      <a href="#education" data-i18n="nav.education">Formação</a>
+      <a href="#skills" data-i18n="nav.skills">Competências</a>
+      <a href="#certificates" data-i18n="nav.certificates">Certificados</a>
+      <a href="#moments" data-i18n="nav.moments">Momentos</a>
+      <a href="#documents" data-i18n="nav.documents">Documentos</a>
+      <a href="#projects" data-i18n="nav.projects">Projectos</a>
+      <a href="#services" data-i18n="nav.services">Serviços</a>
+      <a href="#contact" data-i18n="nav.contact">Contacto</a>
+    </nav>
+
+    <div class="nav-controls">
+      <div class="lang-switch" role="group" aria-label="Idioma / Language">
+        <button type="button" data-lang="pt" aria-pressed="true">PT</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+
+      <button type="button" class="icon-btn" id="theme-toggle" aria-pressed="false" aria-label="Alternar tema claro/escuro">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+        </svg>
+      </button>
+
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+          <path d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Navegação móvel">
+    <a href="#home" data-i18n="nav.home">Início</a>
+    <a href="#about" data-i18n="nav.about">Sobre</a>
+    <a href="#experience" data-i18n="nav.experience">Experiência</a>
+    <a href="#education" data-i18n="nav.education">Formação</a>
+    <a href="#skills" data-i18n="nav.skills">Competências</a>
+    <a href="#certificates" data-i18n="nav.certificates">Certificados</a>
+    <a href="#moments" data-i18n="nav.moments">Momentos</a>
+    <a href="#documents" data-i18n="nav.documents">Documentos</a>
+    <a href="#projects" data-i18n="nav.projects">Projectos</a>
+    <a href="#services" data-i18n="nav.services">Serviços</a>
+    <a href="#contact" data-i18n="nav.contact">Contacto</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="home">
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="hero-eyebrow" data-i18n="hero.eyebrow">Ensino de Inglês · Tradução · Interpretação</span>
+        <h1 class="hero-title" data-i18n="hero.title">Sebastião Nhamuneque</h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">Ensino, traduzo e construo pontes entre o Inglês e o Português.</p>
+        <p class="hero-intro lead" data-i18n="hero.intro">Professor de Inglês moçambicano com mais de 6 anos de experiência…</p>
+
+        <div class="hero-ctas">
+          <a href="#experience" class="btn btn-primary" data-i18n="hero.ctaPrimary">Ver o meu percurso</a>
+          <a href="assets/docs/cv-pt.pdf" download id="hero-cv-btn" class="btn btn-ghost" data-i18n="hero.ctaSecondary">Descarregar CV</a>
+        </div>
+
+        <div class="hero-links">
+          <a href="mailto:nhamoneques@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 6l9 7 9-7"/></svg>
+            nhamoneques@gmail.com
+          </a>
+          <a href="https://wa.me/258845713020" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20l1.4-4.2A8 8 0 1 1 8.6 19L4 20z"/></svg>
+            +258 845 713 020
+          </a>
+          <a href="https://englishflowmz.vercel.app" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18z"/></svg>
+            englishflowmz.vercel.app
+          </a>
+        </div>
+
+        <div class="scroll-hint">
+          <span class="line"></span>
+          <span data-i18n="hero.scrollHint">Descer</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-photo-frame">
+          <img src="assets/img/avatar.jpg" alt="Sebastião Nhamuneque" width="720" height="868" onerror="this.onerror=null;this.src='assets/img/placeholder-avatar.svg'" />
+        </div>
+        <div id="hero-badges"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 data-i18n="about.title">Sobre mim</h2>
+        <p class="lead" data-i18n="about.lead">Sou professor de Inglês, tradutor e intérprete…</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-body">
+          <p data-i18n="about.body.0"></p>
+          <p data-i18n="about.body.1"></p>
+          <p data-i18n="about.body.2"></p>
+        </div>
+        <div class="about-focus">
+          <h3 data-i18n="about.focusTitle">Áreas de especialização</h3>
+          <ul class="focus-list">
+            <li data-i18n="about.focusAreas.0"></li>
+            <li data-i18n="about.focusAreas.1"></li>
+            <li data-i18n="about.focusAreas.2"></li>
+            <li data-i18n="about.focusAreas.3"></li>
+            <li data-i18n="about.focusAreas.4"></li>
+            <li data-i18n="about.focusAreas.5"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 data-i18n="experience.title">Experiência</h2>
+        <p class="lead" data-i18n="experience.lead"></p>
+      </div>
+      <div class="timeline" id="experience-timeline"></div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 data-i18n="education.title">Formação Académica</h2>
+        <p class="lead" data-i18n="education.lead"></p>
+      </div>
+      <div class="timeline" id="education-timeline"></div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 data-i18n="skills.title">Competências</h2>
+        <p class="lead" data-i18n="skills.lead"></p>
+      </div>
+      <div class="grid grid-2" id="skills-grid"></div>
+    </div>
+  </section>
+
+  <section id="certificates">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 data-i18n="certificates.title">Certificados</h2>
+        <p class="lead" data-i18n="certificates.lead"></p>
+      </div>
+
+      <div class="cert-toolbar">
+        <div class="cert-filters" id="cert-filters"></div>
+        <div class="cert-search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+          <input type="search" id="cert-search-input" data-i18n-attr="placeholder:certificates.searchPlaceholder" placeholder="Pesquisar certificados…" />
+        </div>
+      </div>
+
+      <div class="grid grid-3" id="cert-grid"></div>
+    </div>
+  </section>
+
+  <section id="moments">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 data-i18n="moments.title">Momentos</h2>
+        <p class="lead" data-i18n="moments.lead"></p>
+      </div>
+      <div id="moments-list"></div>
+    </div>
+  </section>
+
+  <section id="documents">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 data-i18n="documents.title">Documentos Profissionais</h2>
+        <p class="lead" data-i18n="documents.lead"></p>
+      </div>
+      <div class="grid grid-2" id="documents-grid"></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 data-i18n="projects.title">Projectos</h2>
+        <p class="lead" data-i18n="projects.lead"></p>
+      </div>
+      <div class="grid grid-3" id="projects-grid"></div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 data-i18n="services.title">Serviços</h2>
+        <p class="lead" data-i18n="services.lead"></p>
+      </div>
+      <div class="grid grid-3" id="services-grid"></div>
+    </div>
+  </section>
+
+  <section class="highlights-section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 data-i18n="highlights.title">Destaques</h2>
+      </div>
+      <div class="grid grid-4" id="highlights-grid"></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 data-i18n="contact.title">Contacto</h2>
+        <p class="lead" data-i18n="contact.lead"></p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-info-list">
+            <a href="mailto:nhamoneques@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 6l9 7 9-7"/></svg>
+              nhamoneques@gmail.com
+            </a>
+            <a href="tel:+258845713020">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .6 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.5 2.9.6a2 2 0 0 1 1.7 2z"/></svg>
+              +258 845 713 020
+            </a>
+            <span class="info-row">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span data-i18n="contact.location">Maputo, Moçambique</span>
+            </span>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-field">
+            <label for="cf-name" data-i18n="contact.formName">Nome</label>
+            <input type="text" id="cf-name" name="name" required />
+          </div>
+          <div class="form-field">
+            <label for="cf-email" data-i18n="contact.formEmail">Email</label>
+            <input type="email" id="cf-email" name="email" required />
+          </div>
+          <div class="form-field">
+            <label for="cf-subject" data-i18n="contact.formSubject">Assunto</label>
+            <input type="text" id="cf-subject" name="subject" required />
+          </div>
+          <div class="form-field">
+            <label for="cf-message" data-i18n="contact.formMessage">Mensagem</label>
+            <textarea id="cf-message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" data-i18n="contact.formSubmit">Enviar mensagem</button>
+          <p class="form-note" data-i18n="contact.formNote"></p>
+          <p class="form-status" id="form-status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">Sebastião Nhamuneque</div>
+        <div class="footer-role" data-i18n="footer.role">Professor de Inglês · Tradutor &amp; Intérprete</div>
+      </div>
+      <div class="footer-social">
+        <a href="mailto:nhamoneques@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="M3 6l9 7 9-7"/></svg>
+        </a>
+        <a href="https://wa.me/258845713020" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20l1.4-4.2A8 8 0 1 1 8.6 19L4 20z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Sebastião Nhamuneque — <span data-i18n="footer.rights">Todos os direitos reservados.</span></span>
+      <a href="#home" data-i18n="footer.backToTop">Voltar ao topo</a>
+    </div>
+  </div>
+</footer>
+
+<dialog class="lightbox" id="lightbox" aria-label="Fotografia ampliada">
+  <figure>
+    <img id="lightbox-img" src="" alt="" />
+    <figcaption id="lightbox-cap"></figcaption>
+  </figure>
+  <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Fechar">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+</dialog>
+
+<script src="content.js" defer></script>
+<script src="experience.js" defer></script>
+<script src="education.js" defer></script>
+<script src="skills.js" defer></script>
+<script src="certificates.js" defer></script>
+<script src="moments.js" defer></script>
+<script src="documents.js" defer></script>
+<script src="projects.js" defer></script>
+<script src="services.js" defer></script>
+<script src="main.js" defer></script>
+</body>
+</html>
